@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Contract {
     static Scanner scan = new Scanner(System.in);
     private LocalDate rent_Start;
-    private LocalDate rent_end;
+    public LocalDate rent_end;
     private LocalTime rentstarttime;
-    private LocalTime rentendtime;
+    public LocalTime rentendtime;
 
     public Contract(LocalDate rent_Start, LocalDate rent_end, LocalTime rentstarttime, LocalTime rentendtime) {
         setRent_Start(rent_Start);

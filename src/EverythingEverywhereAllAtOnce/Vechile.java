@@ -10,11 +10,11 @@ public class Vechile {
     private double daily_price;
 
 
-    public Vechile(Brand brand, String model, String gear_type, double daily_price) {
+    public Vechile(Brand brand, String model, String gear_type) {
         this.brand = brand;
         this.model = model;
         setGear_type(gear_type);
-        this.daily_price = daily_price;
+       setDaily_price();
     }
 
     public Brand getBrand() {
@@ -56,7 +56,7 @@ public class Vechile {
         return daily_price;
     }
 
-    public void setDaily_price(double daily_price) {
-        this.daily_price = daily_price;
+    public void setDaily_price() {
+        this.daily_price = 100;
     }
 }
